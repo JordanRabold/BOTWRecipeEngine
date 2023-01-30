@@ -9,6 +9,6 @@ namespace BOTWRecipeEngine.Data
         {
 
         }
-        public DbSet<Recipe> Recipes { get; set; }
+        public DbSet<Botw_Recipes> Recipes { get; set; }
     }
 }

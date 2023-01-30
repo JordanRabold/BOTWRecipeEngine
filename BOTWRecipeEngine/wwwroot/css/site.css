@@ -16,3 +16,25 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.dropdown {
+    margin: 4px;
+}
+
+.btn{
+    margin: 4px;
+}
+
+h1{
+    text-align: center;
+}
+
+.Welcome{
+    text-align: center;
+}
+
+.Welcome2{
+    text-align: center;
+    margin-left: 25em;
+    margin-right: 25em;
+}

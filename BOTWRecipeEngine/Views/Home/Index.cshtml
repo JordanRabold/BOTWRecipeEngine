@@ -1,4 +1,4 @@
-﻿@model BOTWRecipeEngine.Models.Botw_Recipes
+﻿@model List<Botw_Recipes>;
 
 @{
     ViewData["Title"] = "Breath of the Wild Recipe Engine";
@@ -71,6 +71,19 @@
             <button class="btn btn-secondary" type="button">Get Recipe</button>
         </div>
     </div>
+</div>
+
+<div>
+    <table cellpadding="0" cellspacing="0">
+        @foreach (Botw_Recipes recipeItem in Model)
+        {
+            <tr>
+                <td>@recipeItem.ID</td>
+                <td>@recipeItem.RecipeName</td>
+                <td>@recipeItem.Ingredient1</td>
+            </tr>
+        }
+    </table>
 </div>
 
 

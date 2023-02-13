@@ -2,6 +2,7 @@
 using BOTWRecipeEngine.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace BOTWRecipeEngine.Controllers
 {
@@ -18,7 +19,8 @@ namespace BOTWRecipeEngine.Controllers
         [HttpGet]
         public IActionResult GetRecipe(int id)
         {
-            return View();
+            var recipe = _context.Recipes.Where(r => r.ID == id).ToList();
+            return View(recipe);
         }
     }
 }

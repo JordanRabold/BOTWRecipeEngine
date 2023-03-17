@@ -4,7 +4,10 @@ CREATE DATABASE DBBOTWRecipeEngine
 
 USE DBBOTWRecipeEngine
 
+DROP TABLE Botw_Recipes
+
 CREATE TABLE Botw_Recipes(
+	ID INT,
 	RecipeName VARCHAR(40),
 	Ingredient1 VARCHAR(40),
 	Ingredient2 VARCHAR(40),
@@ -15,7 +18,8 @@ CREATE TABLE Botw_Recipes(
 );
 
 INSERT INTO Botw_Recipes 
-	VALUES('Pumpkin Stew', 
+	VALUES(1, 
+		   'Pumpkin Stew', 
 		   'Fortified Pumpkin',
 		   'Goat Butter',
 		   'Fresh Milk',

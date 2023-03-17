@@ -1,0 +1,80 @@
+﻿@model IEnumerable<BOTWRecipeEngine.Models.Botw_Recipes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RecipeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ingredient1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ingredient2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ingredient3)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ingredient4)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Num_Hearts)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RecipePicture)
+                </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredient1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredient2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredient3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredient4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Num_Hearts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipePicture)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

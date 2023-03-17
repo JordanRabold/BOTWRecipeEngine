@@ -19,28 +19,10 @@ namespace BOTWRecipeEngine.Controllers
             _context = context;
         }
 
-        public IActionResult SearchRecipes(){
-            //List<Botw_Recipes> recipeList = new List<Botw_Recipes>();
-            /*String apiURL = "https://localhost:7075/api/GetRecipe/1";
-            HttpClient client = new HttpClient();
-            HttpResponseMessage message = client.GetAsync(apiURL).Result;
-            if (message.IsSuccessStatusCode)
-            {
-                recipeList = JsonConvert.DeserializeObject<System.Data.DataTable>(message);
-            }*/
-
-            var recipeList = new RecipeController(_context).GetRecipe(1);
-
-
-            return View(recipeList);
-        }
-
         public IActionResult Index()
         {
-            var recipeList = new RecipeController(_context).GetRecipe(1);
-
-
-            return(recipeList);
+            List<Botw_Recipes> model = _context.Recipes.ToList();
+            return View(model);
         }
 
         public IActionResult Privacy()

@@ -25,10 +25,10 @@
                     Ingredient 1
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Fortified Pumpkin</a></li>
-                    <li><a class="dropdown-item" href="#">Goat Butter</a></li>
-                    <li><a class="dropdown-item" href="#">Fresh Milk</a></li>
-                    <li><a class="dropdown-item" href="#">Tabantha Wheat</a></li>
+                    <li><a class="dropdown-item1">Fortified Pumpkin</a></li>
+                    <li><a class="dropdown-item2">Goat Butter</a></li>
+                    <li><a class="dropdown-item3">Fresh Milk</a></li>
+                    <li><a class="dropdown-item4">Tabantha Wheat</a></li>
                 </ul>
             </div>
 
@@ -37,10 +37,10 @@
                     Ingredient 2
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Fortified Pumpkin</a></li>
-                    <li><a class="dropdown-item" href="#">Goat Butter</a></li>
-                    <li><a class="dropdown-item" href="#">Fresh Milk</a></li>
-                    <li><a class="dropdown-item" href="#">Tabantha Wheat</a></li>
+                    <li><a class="dropdown-item1">Fortified Pumpkin</a></li>
+                    <li><a class="dropdown-item2">Goat Butter</a></li>
+                    <li><a class="dropdown-item3">Fresh Milk</a></li>
+                    <li><a class="dropdown-item4">Tabantha Wheat</a></li>
                 </ul>
             </div>
 
@@ -49,10 +49,10 @@
                     Ingredient 3
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Fortified Pumpkin</a></li>
-                    <li><a class="dropdown-item" href="#">Goat Butter</a></li>
-                    <li><a class="dropdown-item" href="#">Fresh Milk</a></li>
-                    <li><a class="dropdown-item" href="#">Tabantha Wheat</a></li>
+                    <li><a class="dropdown-item1">Fortified Pumpkin</a></li>
+                    <li><a class="dropdown-item2">Goat Butter</a></li>
+                    <li><a class="dropdown-item3">Fresh Milk</a></li>
+                    <li><a class="dropdown-item4">Tabantha Wheat</a></li>
                 </ul>
             </div>
 
@@ -61,29 +61,19 @@
                     Ingredient 4
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Fortified Pumpkin</a></li>
-                    <li><a class="dropdown-item" href="#">Goat Butter</a></li>
-                    <li><a class="dropdown-item" href="#">Fresh Milk</a></li>
-                    <li><a class="dropdown-item" href="#">Tabantha Wheat</a></li>
+                    <li><a class="dropdown-item1">Fortified Pumpkin</a></li>
+                    <li><a class="dropdown-item2">Goat Butter</a></li>
+                    <li><a class="dropdown-item3">Fresh Milk</a></li>
+                    <li><a class="dropdown-item4">Tabantha Wheat</a></li>
                 </ul>
             </div>
 
-            <button class="btn btn-secondary" type="button">Get Recipe</button>
+            <asp:button id="GetRecipe" onclick="GetRecipe_Click" runat="server" class="btn btn-secondary" type="button">Get Recipe</asp:button>
         </div>
     </div>
 </div>
 
-<div>
-    <table cellpadding="0" cellspacing="0">
-        @foreach (Botw_Recipes recipeItem in Model)
-        {
-            <tr>
-                <td>@recipeItem.ID</td>
-                <td>@recipeItem.RecipeName</td>
-                <td>@recipeItem.Ingredient1</td>
-            </tr>
-        }
-    </table>
-</div>
+
+
 
 

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace BOTWRecipeEngine.Models
+﻿namespace BOTWRecipeEngine.Models
 {
     public class Botw_Recipes
     {
@@ -8,7 +6,7 @@ namespace BOTWRecipeEngine.Models
 
         public string RecipeName { get; set; }
 
-        public string Ingredient1 { get; set; } // TODO: Determine how to handle multiple ingredients
+        public string Ingredient1 { get; set; }
 
         public string Ingredient2 { get; set; }
 

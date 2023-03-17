@@ -19,4 +19,4 @@ you have in your game in real time!
 - [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 # Main Page/ Recipe Engine
-![mainpage](BOTWSite.PNG)
+![mainpage](BOTWSite2.JPG)
